@@ -2,6 +2,9 @@
 
 import random
 
+def mover_tortuga():
+    return random.randint(1, 10)
+
 def main():
     tortuga1 = 0
     tortuga2 = 0
@@ -15,9 +18,9 @@ def main():
     print("¡Que comience la carrera!\n")
 
     while tortuga1 < meta and tortuga2 < meta and tortuga3 < meta:
-        avance1 = random.randint(1, 10)
-        avance2 = random.randint(1, 10)
-        avance3 = random.randint(1, 10)
+        avance1 = mover_tortuga()
+        avance2 = mover_tortuga()
+        avance3 = mover_tortuga()
 
         tortuga1 += avance1
         tortuga2 += avance2
