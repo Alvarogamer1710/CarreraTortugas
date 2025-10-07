@@ -26,9 +26,26 @@ def main():
         tortuga2 += avance2
         tortuga3 += avance3
 
-        print(f"Tortuga 1 avanzó {avance1} unidades. Total: {tortuga1}")
-        print(f"Tortuga 2 avanzó {avance2} unidades. Total: {tortuga2}")
-        print(f"Tortuga 3 avanzó {avance3} unidades. Total: {tortuga3}\n")
+        print(f"Tortuga 1 avanzó {avance1} metros. Total: {tortuga1} metros")
+        print(f"Tortuga 2 avanzó {avance2} metros. Total: {tortuga2} metros")
+        print(f"Tortuga 3 avanzó {avance3} metros. Total: {tortuga3} metros\n")
+
+
 
     if tortuga1 >= meta & tortuga2 >= meta & tortuga3 >= meta:
         print("¡Es un empate entre las tres tortugas!")
+    elif tortuga1 >= meta & tortuga2 >= meta:
+        print("¡Es un empate entre la Tortuga 1 y la Tortuga 2!")
+    elif tortuga1 >= meta & tortuga3 >= meta:
+        print("¡Es un empate entre la Tortuga 1 y la Tortuga 3!")
+    elif tortuga2 >= meta & tortuga3 >= meta:
+        print("¡Es un empate entre la Tortuga 2 y la Tortuga 3!")
+    elif tortuga1 >= meta:
+        print("¡La Tortuga 1 gana la carrera!")
+    elif tortuga2 >= meta:
+        print("¡La Tortuga 2 gana la carrera!")
+    else:
+        print("¡La Tortuga 3 gana la carrera!")
+
+
+main()
