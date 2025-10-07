@@ -31,6 +31,11 @@ def main():
         print(f"Tortuga 3 avanzó {avance3} metros. Total: {tortuga3} metros\n")
 
 
+        x = 0
+
+        while x<100000000:
+            x+=1
+
 
     if tortuga1 >= meta & tortuga2 >= meta & tortuga3 >= meta:
         print("¡Es un empate entre las tres tortugas!")
