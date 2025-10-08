@@ -3,7 +3,7 @@
 import random
 
 def mover_tortuga(): ## Genera un número aleatorio entre 1 y 10 para simular el movimiento de las tortugas
-    return random.randint(1, 10)
+    return random.randint(0, 10)
 
 def main():
 
