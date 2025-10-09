@@ -19,6 +19,8 @@ def main():
     print("Cada tortuga avanzará una distancia aleatoria entre 1 y 10 unidades en cada turno.")
     print("¡Que comience la carrera!\n")
 
+    s = 0
+
     while tortuga1 < meta and tortuga2 < meta and tortuga3 < meta: ## Mientras ninguna tortuga haya llegado a la meta, la carrera continúa
         avance1 = mover_tortuga()
         avance2 = mover_tortuga()
@@ -28,7 +30,8 @@ def main():
         tortuga1 += avance1
         tortuga2 += avance2
         tortuga3 += avance3
-
+        
+        print(f"Turno {s+1}:")
         print(f"Tortuga 1 avanzó {avance1} metros. Total: {tortuga1} metros")
         print(f"Tortuga 2 avanzó {avance2} metros. Total: {tortuga2} metros")
         print(f"Tortuga 3 avanzó {avance3} metros. Total: {tortuga3} metros\n")
