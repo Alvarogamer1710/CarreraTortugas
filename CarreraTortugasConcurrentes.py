@@ -1,3 +1,5 @@
+## Autor: Álvaro Hernández Villarreal
+
 import threading
 import random
 import time
